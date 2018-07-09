@@ -1,0 +1,5 @@
+<button class="btn-main" (click)="createNewWidget()">Добавить виджет</button>
+<div class="flex-container">
+    <app-widget *ngFor="let widget of widgets" [widget]="widget"></app-widget>    
+</div>
+

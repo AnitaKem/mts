@@ -1,0 +1,104 @@
+
+body {
+    background-color: rgba(0, 0, 0, 0.85);
+    font-family: sans-serif;
+}
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px -10px;
+}
+
+.flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.btn-main {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btn-main:hover{
+    transform: scale(1.05);
+}
+
+.widget{
+    width: 300px;
+    height: 250px;
+    background-color: white;
+    margin: 10px 10px;
+    padding: 20px 25px;
+}
+
+.main-img{
+    width: 90px;
+    height: 90px;
+    padding: 5px;
+}
+
+.small-img{
+    width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    margin-bottom: -5px;
+}
+
+.round{
+    border-radius: 50%;
+}
+
+.main-info{
+    font-size: 0.8em;
+    color: grey;
+}
+
+.main-info > div {
+    margin: 5px 0px;
+}
+
+.widget-btn{
+    float: right;
+    background: linear-gradient(to right,#473eb5, #258de6);
+    border: none;
+    color: white;
+    padding: 7px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.widget-btn i{
+    margin-right: 5px;
+}
+
+.widget-btn-fav{
+    background: white;
+    border: solid 1px #6a9dcc;
+    color: #9adbff;
+}
+
+h3{
+    cursor: pointer;
+}
+
+h3:hover{
+    color: #9adbff;
+}
+

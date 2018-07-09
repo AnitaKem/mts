@@ -1,0 +1,16 @@
+<div class="widget">
+  <div class="img-container">
+      <app-image *ngFor="let ava of widget.avatars" [image]="ava"></app-image>    
+  </div> 
+  <h3>{{ widget.header }}</h3>
+  <div class="main-info">
+    <div>Создатель: <a href="#">{{ widget.creator}}</a></div>
+    <div>
+      Отслеживают:
+      <app-image *ngFor="let follower of widget.followers" [image]="follower" [isSmall]="true"></app-image>
+      ... ({{ widget.followersCount }})
+    </div>
+  </div>  
+  <button *ngIf="!widget.isFavourite" class="widget-btn"><i class="fas fa-star"></i>Добавить в избранное</button>
+  <button *ngIf="widget.isFavourite" class="widget-btn widget-btn-fav"><i class="far fa-check-circle"></i>В избранном</button>
+</div>
