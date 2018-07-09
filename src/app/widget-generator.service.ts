@@ -14,7 +14,7 @@ export class WidgetGeneratorService {
     return new Widget(
       {
         avatars: this.getImages(3),
-        followers: this.getImages(5),
+        followers: this.getImages(this.getRandomNumber(5)),
         followersCount: this.getRandomNumber(1000),
         isFavourite: this.getRandomBoolean(),
         header: this.getRandomHeader(),
